@@ -1,10 +1,11 @@
 import faker as fk
+import random
 
 fake = fk.Faker()
 
 usuarios = {}
 
-# Genera lista de 15 usuarios con datos ficticios
+# Xenera lista de 15 usuarios con datos ficticios
 for i in range(1, 16):
     codigo = i
     nome = fake.name()
@@ -18,7 +19,11 @@ for i in range(1, 16):
     usuario["telefono"] = telefono
     usuarios[codigo] = usuario
 
-# Muestra lista de usuarios
+# Mostra lista de usuarios
 for id, usuario in usuarios.items():
-    # print(f"ID: {codigo} - Nome: {datos["nome"]}")
     print(f"ID: {id} -> {usuario}")
+
+# Seleccion aleatoria usuario
+id_usuario_selecciondo = random.choice(list(usuarios.keys()))
+nome = usuarios[id_usuario_selecciondo]["nome"]
+print(f"O usuario chamado {nome} foi o afortunado")
