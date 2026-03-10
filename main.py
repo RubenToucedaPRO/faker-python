@@ -1,7 +1,7 @@
 import faker as fk
 import random
 
-fake = fk.Faker()
+fake = fk.Faker("es_ES")
 
 usuarios = {}
 
