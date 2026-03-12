@@ -2,8 +2,7 @@
 Tarefa 2 - Curso desarrollo de aplicaciones con Python - Entornos y sintaxis en Python
 
 ## Descripción
-Faker es una biblioteca de Python que permite generar datos falsos de manera sencilla. En esta aplicación se generan los datos aleatorios de 15 usuarios (nombre, dirección, correo electrónico, teléfono) y se alamacenan en un diccionario. Se muestran por pantalla todos los datos de los usuarios creadps.
-El programa seleccionará aleatoriamente uno de los usuarios el cual se muestra en pantalla.
+Faker es una biblioteca de Python que permite generar datos falsos de manera sencilla. En esta aplicación se generan los datos aleatorios de 15 usuarios (nombre, dirección, correo electrónico, teléfono) en un diccionario. Se muestran por terminal todos los datos de los usuarios creados. El programa seleccionará aleatoriamente uno de los usuarios el cual se mostrará en terminal.
 
 ## Instalación proyecto
 1. Clonar el repositorio:
