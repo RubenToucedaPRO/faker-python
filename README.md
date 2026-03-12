@@ -37,3 +37,7 @@ Faker es una biblioteca de Python que permite generar datos falsos de manera sen
    pip install -r requirements.txt
    ```      
 6. Es posible que sea necesario reiniciar vs code para que reconozca el el paquete faker.
+
+## Referencias
+- [Faker Documentation](https://faker.readthedocs.io/en/master/)
+- [Quitar tildes en Python](https://es.stackoverflow.com/questions/135707/c%C3%B3mo-puedo-reemplazar-las-letras-con-tildes-por-las-mismas-sin-tilde-pero-no-l)

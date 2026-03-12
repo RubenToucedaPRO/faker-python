@@ -1,5 +1,15 @@
 import faker as fk
 import random
+import unicodedata
+
+
+def preparar_nome_para_correo(nome):
+    """Elimina espacios e tildes e mantén as ñ"""
+    nome = nome.replace("ñ", "#").replace(" ", "").lower()
+    nome = unicodedata.normalize("NFKD", nome).encode("ascii", "ignore").decode("ascii")
+    nome = nome.replace("#", "ñ")
+    return nome
+
 
 fake = fk.Faker("es_ES")
 
@@ -9,8 +19,8 @@ usuarios = {}
 for i in range(1, 16):
     codigo = i
     nome = fake.name()
-    direccion = fake.street_address()
-    correo = fake.email()
+    direccion = fake.street_address() + " " + fake.city()
+    correo = preparar_nome_para_correo(nome) + "@" + fake.free_email_domain()
     telefono = fake.phone_number()
     usuario = {}
     usuario["nome"] = nome
